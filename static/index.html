@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClipsByAdarsh AI - Shorts Studio</title>  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="app-shell">
+
+  <header class="topbar">
+    <a class="brand" href="/">
+  <span class="brand-icon">✦</span>
+  ClipsByAdarsh<span class="brand-ai">.AI</span>
+</a>
+    <div class="top-status">
+      <span class="online-dot"></span>
+      LOCAL STUDIO
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-badge">✦ AI VIDEO CLIP GENERATOR</div>
+      <h1>Turn long videos into<br>
+        <span>viral moments.</span>
+      </h1>
+      <p>Find the best moments in your videos. Select your favourite clips and create Shorts in seconds.</p>
+    </section>
+
+    <section class="panel upload-panel">
+
+      <div class="section-heading">
+        <div>
+          <span class="step-label">STEP 01 / UPLOAD</span>
+          <h2>Start with your video</h2>
+          <p>Choose a video and let ClipForge find the highlights.</p>
+        </div>
+        <div class="heading-icon">↗</div>
+      </div>
+
+      <label for="url">YouTube link <span class="optional">OPTIONAL</span></label>
+      <input id="url" type="url" placeholder="Paste your YouTube reference link...">
+
+      <label for="video">Your video file <span class="required">*</span></label>
+      <div class="upload-area">
+        <div class="upload-icon">↑</div>
+        <h3>Choose your video</h3>
+        <p>MP4, MOV, MKV, WEBM or AVI</p>
+        <input id="video" type="file" accept="video/mp4,video/quicktime,video/x-matroska,video/webm,video/x-msvideo">
+      </div>
+
+      <label for="sub">Transcript <span class="optional">OPTIONAL</span></label>
+      <input id="sub" type="file" accept=".srt,.vtt">
+
+      <div class="notice">
+        <span>ⓘ</span>
+        Upload a video you own or have permission to edit. YouTube links are saved as references only.
+      </div>
+
+      <button id="analyze" class="primary-btn">
+        Find Viral Moments <span>→</span>
+      </button>
+
+      <div id="status" role="status"></div>
+
+    </section>
+
+    <section class="results">
+
+      <div class="section-heading">
+        <div>
+          <span class="step-label">STEP 02 / SELECT</span>
+          <h2>Your suggested clips</h2>
+          <p>Review your highlights and choose which ones to export.</p>
+        </div>
+        <div id="total" class="count">0 SUGGESTIONS</div>
+      </div>
+
+      <div id="clips" class="grid">
+        <div class="empty">
+          <div class="empty-icon">✦</div>
+          <h3>Your clips will appear here</h3>
+          <p>Upload a video to discover its best moments.</p>
+        </div>
+      </div>
+
+      <button id="export" class="export-btn" hidden>
+        Export Selected Shorts →
+      </button>
+
+      <div id="downloads"></div>
+
+    </section>
+
+  </main>
+
+ <footer>
+  <span>✦ ClipsByAdarsh AI</span>
+  <span>Made by Adarsh · AI Shorts Studio</span>
+</footer>
+
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
